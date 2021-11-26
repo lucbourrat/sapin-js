@@ -1,33 +1,61 @@
+:root {
+  --cubeSize: 20px;
+  --topCubeSize: 10px;
+  --treeCubeColor: green;
+  --trunkCubeColor: brown;
+  --spaceCubeColor: white;
+}
+
 #sapinContainer {
-	background-color: grey;
+	background-color: #fff;
 }
 
 .treeLine {
     display: flex;
 }
 
-.treeLine .treeCube:first-child {
-    background-color: blue;
-}
-
 .firstTreeLine .treeCube {
-    background-color: red;
+    background-color: var(--treeCubeColor);
 }
 
 .cube {
-	width: 20px;
-	height: 20px;
+	width: var(--cubeSize);
+	height: var(--cubeSize);
 	display: block;
 }
 
 .spaceCube {
-	background-color: white;
-}
-
-.treeCube {
-	background-color: green;
+	background-color: var(--spaceCubeColor);
 }
 
 .trunkCube {
-	background-color: brown;
+	background-color: var(--trunkCubeColor);
+}
+
+.treeCube {
+	background-color: var(--treeCubeColor);
+}
+
+.topTreeCube {
+	width: 0;
+	height: 10px;
+	border-style: solid;
+	border-width: 0 var(--topCubeSize) var(--topCubeSize) var(--topCubeSize);
+	border-color: var(--spaceCubeColor) var(--spaceCubeColor) var(--treeCubeColor) var(--spaceCubeColor);
+}
+
+.firstTreeCube {
+	display : inline-block;
+	height : 0;
+	width : 0;
+	border-bottom : var(--cubeSize) solid var(--treeCubeColor);
+	border-left : var(--cubeSize) solid var(--spaceCubeColor);
+}
+
+.lastTreeCube {
+	display : inline-block;
+	height : 0;
+	width : 0;
+	border-right : var(--cubeSize) solid var(--spaceCubeColor);
+	border-bottom : var(--cubeSize) solid var(--treeCubeColor);
 }

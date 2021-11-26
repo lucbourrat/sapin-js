@@ -1,0 +1,33 @@
+#sapinContainer {
+	background-color: grey;
+}
+
+.treeLine {
+    display: flex;
+}
+
+.treeLine .treeCube:first-child {
+    background-color: blue;
+}
+
+.firstTreeLine .treeCube {
+    background-color: red;
+}
+
+.cube {
+	width: 20px;
+	height: 20px;
+	display: block;
+}
+
+.spaceCube {
+	background-color: white;
+}
+
+.treeCube {
+	background-color: green;
+}
+
+.trunkCube {
+	background-color: brown;
+}

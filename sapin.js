@@ -1,3 +1,7 @@
+function sapin(size) {
+
+}
+
 function addSpace() {
 	let newSpace = document.createElement("span");
 	newSpace.classList.add("cube", "spaceCube");

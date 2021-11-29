@@ -12,6 +12,7 @@
 
 .treeLine {
     display: flex;
+    /*justify-content: center;*/
 }
 
 .firstTreeLine .treeCube {
@@ -22,6 +23,7 @@
 	width: var(--cubeSize);
 	height: var(--cubeSize);
 	display: block;
+	/*border: 1px solid grey;*/
 }
 
 .spaceCube {
